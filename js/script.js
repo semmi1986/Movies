@@ -25,6 +25,11 @@ $img.forEach(item => {
 const $promoGenre = document.querySelector('.promo__genre');
 $promoGenre.textContent = "ДРАМА";
 
+//task 3 
+const $promoBg = document.querySelector('.promo__bg');
+
+$promoBg.style.background = "url('img/bg.jpg')";
+
 
 const movieDB = {
 	movies: [
