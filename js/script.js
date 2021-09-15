@@ -14,23 +14,11 @@
 
 'use strict';
 
-// задание 1
-const $img = document.querySelectorAll('img');
-
-$img.forEach(item => {
-	item.remove();
-});
-
-//task 2
-const $promoGenre = document.querySelector('.promo__genre');
-$promoGenre.textContent = "ДРАМА";
-
-//task 3 
-const $promoBg = document.querySelector('.promo__bg');
-
-$promoBg.style.background = "url('img/bg.jpg')";
-
-//task 4
+// tack 1
+const $img = document.querySelectorAll('img'), // tack 1
+	$promoGenre = document.querySelector('.promo__genre'), //task 2
+	$promoBg = document.querySelector('.promo__bg'), //task 3 
+	$promoList = document.querySelector('.promo__interactive-list'); //task5
 
 const movieDB = {
 	movies: [
@@ -42,11 +30,22 @@ const movieDB = {
 	]
 };
 
+// tack 1
+$img.forEach(item => {
+	item.remove();
+});
+
+//task 2
+$promoGenre.textContent = "ДРАМА";
+
+//task 3 
+$promoBg.style.background = "url('img/bg.jpg')";
+
+//task 4
 movieDB.movies.sort();
 
-//task5
-const $promoList = document.querySelector('.promo__interactive-list');
 
+//task5
 $promoList.innerHTML = '';
 
 movieDB.movies.forEach((item, i) => {
