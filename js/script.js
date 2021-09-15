@@ -30,6 +30,7 @@ const $promoBg = document.querySelector('.promo__bg');
 
 $promoBg.style.background = "url('img/bg.jpg')";
 
+//task 4
 
 const movieDB = {
 	movies: [
@@ -40,3 +41,5 @@ const movieDB = {
 		"Скотт Пилигрим против..."
 	]
 };
+
+movieDB.movies.sort();
