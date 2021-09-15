@@ -21,8 +21,10 @@ $img.forEach(item => {
 	item.remove();
 });
 
+//task 2
+const $promoGenre = document.querySelector('.promo__genre');
+$promoGenre.textContent = "ДРАМА";
 
-console.log($img);
 
 const movieDB = {
 	movies: [
