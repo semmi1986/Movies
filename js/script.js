@@ -43,3 +43,16 @@ const movieDB = {
 };
 
 movieDB.movies.sort();
+
+//task5
+const $promoList = document.querySelector('.promo__interactive-list');
+
+$promoList.innerHTML = '';
+
+movieDB.movies.forEach((item, i) => {
+	$promoList.innerHTML += `
+	<li class="promo__interactive-item">${i+1}. ${item}
+		<div class="delete"></div>
+	</li>
+	`;
+});
