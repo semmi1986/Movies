@@ -39,7 +39,7 @@ $img.forEach(item => {
 $promoGenre.textContent = "ДРАМА";
 
 //task 3 
-$promoBg.style.background = "url('img/bg.jpg')";
+$promoBg.style.backgroundImage = "url('img/bg.jpg')";
 
 //task 4
 movieDB.movies.sort();
