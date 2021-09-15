@@ -15,7 +15,7 @@
 'use strict';
 
 // tack 1
-const $img = document.querySelectorAll('img'), // tack 1
+const $img = document.querySelectorAll('.promo__adv img'), // tack 1
 	$promoGenre = document.querySelector('.promo__genre'), //task 2
 	$promoBg = document.querySelector('.promo__bg'), //task 3 
 	$promoList = document.querySelector('.promo__interactive-list'); //task5
