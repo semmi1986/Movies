@@ -14,6 +14,16 @@
 
 'use strict';
 
+// задание 1
+const $img = document.querySelectorAll('img');
+
+$img.forEach(item => {
+	item.remove();
+});
+
+
+console.log($img);
+
 const movieDB = {
 	movies: [
 		"Логан",
